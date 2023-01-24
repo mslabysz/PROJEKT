@@ -51,7 +51,7 @@ void moveChar() //funkcja odpowiadająca za drukowanie i manipulowanie figurą
 	int number;
 	int size;
 	
-	cout<<endl;
+	cout<<endl<<"PRZESUWANIE FIGURY PO EKRANIE: STRZALKI"<<endl<<"ZWIEKSZANIE I ZMNIEJSZANIE FIGURY: KLAWISZE '+' i '-'"<<endl<<"MILEJ ZABAWY!!!"<<endl<<endl;
 	
 	cout << "Podaj numer z tabeli ASCII: "<<endl;
 	cin >> number;
@@ -102,7 +102,7 @@ void moveChar() //funkcja odpowiadająca za drukowanie i manipulowanie figurą
 
 int main()
 {
-	cout << "NACISNIJ F1 ABY WYSWIETLIC ZNAK ASCII PO KODZIE. NACISNIJ F2 ABY WYSWIETLIC FIGURE.";
+	cout << "NACISNIJ F1 ABY WYSWIETLIC ZNAK ASCII PO KODZIE. NACISNIJ F2 ABY WYSWIETLIC FIGURE."<<endl;
 	_getch(); 
 	if (GetAsyncKeyState(VK_F1) != 0) //sprawadzenie czy zostal nacisniety klawisz F1
 		showASCII(); //wywołanie funkcji
