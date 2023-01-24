@@ -2,8 +2,8 @@
 #include <conio.h>
 #include <Windows.h>
 #include <cstdio>
-using namespace std;
 
+using namespace std;
 
 void gotoxy(int x, int y) { //funkcja ustawiająca kursor w miejsce wspolrzednych
 	COORD c;
@@ -61,6 +61,7 @@ void moveChar() //funkcja odpowiadająca za drukowanie i manipulowanie figurą
 	cin>>size;
 	
 	system("cls"); //wyczyszczenie ekranu
+	
 	int width = 0, height = 0;
 	screensize(width, height); 
 	int x = width / 2, y = height / 2; //ustawienie środka ekranu
